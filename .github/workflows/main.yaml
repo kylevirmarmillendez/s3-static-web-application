@@ -21,7 +21,7 @@ jobs:
 
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync . s3:s3-web-static-app-657 --delete \
+          aws s3 sync . s3://s3-web-static-app-657 --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude ".gitignore" \
